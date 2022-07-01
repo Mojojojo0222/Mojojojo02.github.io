@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500;1,600&family=Square+Peg&family=Ubuntu:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <section class="sub-header">
+       <nav>
+           <a href="index.html"><img src="/eduford_img/logo.png" alt=""></a>
+           <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/course.html">Course</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+       <h1>Contact Us</h1>
+    </section>
+    
+
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.22405537314!2d82.99110895!3d25.32076265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1656047423756!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+        <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5> ABC Road, KDK NAGAR</h5>
+                    <p> Varanasi, Uttar Pradesh</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5> +91 10909090909</h5>
+                    <p>Monday to Friday, 10AM to 6PM </p>
+                </span>
+
+            </div>
+
+            <div>
+                <i class="fa-regular fa-envelope"></i>
+                <span>
+                    <h5>Manjeetrai.002@gmail.com</h5>
+                    <p> For any quries </p>
+                </span>
+
+            </div>
+        </div>
+        <div class="contact-col"></div>
+        
+        <form action="">
+            <input  class="con" type="text" placeholder="Enter your Name" required>
+            <input  class="con" type="email" placeholder="Enter your Email" required>
+            <input class="con" type="text " placeholder="Enter your Subject" required>
+            <textarea class="con" name="" id="" cols="25" rows="6"></textarea>
+            <button  type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+        </div>
+    </section>
+     
+    <!--Course-->
+
+   
+    <!--campus-->
+    
+    
+<!--Facilities-->
+
+
+<!--Testimonials-->
+
+
+<!--Call to action-->
+
+
+
+<!--Footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati <br> totam quod nisi tempora quisquam ullam expedita, reiciendis officia?</p>
+    <div class="icons">
+   <i class="fa fa-facebook"></i>
+   <i class="fa fa-twitter"></i>
+   <i class="fa fa-instagram"></i>
+   <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="fa fa-heart-o"></i> By Manjeet Rai</p>
+</section>
+ 
+
+
+<button id="mybtn" onclick="topFunction()">Go to Top</button>
+
+
+
+
+
+
+
+
+
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+
+        }
+       
+        function hideMenu(){
+            navlinks.style.right="-270px";
+        }
+
+
+        var mybutton=document.getElementById("mybtn");
+        window.onscroll=function(){scrollFunction()};
+        function scrollFunction(){
+            if(document.body.scrollTop>200||document.documentElement.scrollTop>200){
+                mybutton.style.display="block";
+            }
+            else{
+                mybutton.style.display="none";
+            }
+        }
+        function topFunction(){
+            document.body.scrollTop=0;
+            document.documentElement.scrollTop=0;
+        }
+    </script>
+</body>
+</html>
